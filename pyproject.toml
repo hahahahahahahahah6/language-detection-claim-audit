@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "language-detection-claim-audit"
+version = "0.1.0"
+description = "Local static audit of prose promises against source operations"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+
+[project.scripts]
+language-detection-claim-audit = "language_detection_claim_audit.audit:main"
+
+[tool.setuptools.packages.find]
+include = ["language_detection_claim_audit*"]
